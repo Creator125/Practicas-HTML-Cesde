@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Onoclick | Registro</title>
 </head>
 <body>
     <center>
@@ -19,23 +19,41 @@
         <h1 style="background-color: rgb(10, 255, 161)">Tienda Onclick</h1>
       </center>
       
-      <h1>Registro</h1>
-
       <center>
+      <h1>Registro</h1>
+        
+      <!--Formulario de registro-->
         <form>
           <label>Nombre</label>
-          <input type="text" placeholder="Nombre"><br><br>
+          <input name="nombre" type="text" placeholder="Nombre"><br><br>
           <label>Edad</label>
-          <input type="number" width="30px"><br><br>
+          <input name="edad" type="number" width="30px"><br><br>
           <label>Fecha de nacimiento</label>
-          <input type="date" max="2022-12-30" required><br><br>
+          <input name="fecha" type="date" max="2022-12-30" required><br><br>
           <label>Correo electronico</label>
-          <input type="email" required><br><br>
+          <input name="correo" type="email" required><br><br>
           <label>Contraseña</label>
-          <input type="password" required><br><br>
+          <input name="contraseña" type="password" required><br><br>
           <label>Telefono</label>
-          <input type="number"><br><br>
+          <input name="telefono" type="number"><br><br>
+          <input type="radio" name="genero" value="Hombre">Hombre
+          <input type="radio" name="genero" value="Mujer">Mujer 
+          <input type="radio" name="genero" value="Sin especificar">Sin especificar<br><br>
+          <input type="checkbox">Apceto los termminos y condiciones <br><br>
+          <label>Municipio</label>
+          <select>
+            <option value="Antioquia">Antioquia</option>
+            <option value="Bogotá">Bogota</option>
+            <option value="Amazonas">Amazonas</option>
+            <option value="San Andres y providencia">San Andres y providencia</option>
+            <option value="Meta">Meta</option>
+          </select><br><br>
+          <label>Description</label><br>
+          <textarea cols="30" rows="10"></textarea><br><br>
+
           <input type="submit" value="Registro">
+          <input type="reset">
+          <button>Ayuda</button>
             
         
         </form>
